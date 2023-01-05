@@ -39,14 +39,15 @@ import org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem.Evaluat
 import org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer;
 import org.apache.commons.math3.optim.ConvergenceChecker;
 import org.apache.commons.math3.optim.SimpleVectorValueChecker;
+import org.junit.jupiter.api.Test;
 
 /**
  * Minimal reproducible example of the floating point issues between Java 8 and Java 17
  */
-public class TimeSeriesModelFitterBugTest2  {
+public class TimeSeriesModelFitterBugTest  {
 
 
-	@org.junit.jupiter.api.Test
+	@Test
 	public void reproduceRegression() throws Exception {
 
 		double[] obstimes = new double[] { 1769.19447887209822, 1793.11335157792223, 1793.18734866346449, 1824.84317446474029, 1824.9171491695015, 1862.64812786623224, 1862.82424848524033, 1862.89830169656966, 1886.82817182598365, 1886.90217904917267, 1930.56263613548481, 1930.63661741753253,
