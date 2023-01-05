@@ -29,7 +29,6 @@ package gaia.dpcg;
 
 import org.apache.commons.math3.fitting.leastsquares.ParameterValidator;
 import org.apache.commons.math3.linear.RealVector;
-import org.apache.commons.math3.stat.regression.ModelSpecificationException;
 import org.apache.commons.math3.util.MathUtils;
 
 

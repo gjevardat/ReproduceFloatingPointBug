@@ -114,12 +114,6 @@ public class TimeSeriesModelFitterBugTest  {
 	
 	/**
 	 * Build list of Apache WeightedObservedPoint from input data
-	 * @param referenceTime
-	 * @param obstimes
-	 * @param vals
-	 * @param errs
-	 * @param weightingStrategy
-	 * @return
 	 */
 	private List<WeightedObservedPoint>  getWeightedPoints(double referenceTime, double[] obstimes,double[] vals,double[] errs ){
 		List<WeightedObservedPoint> list = new ArrayList<>() ;

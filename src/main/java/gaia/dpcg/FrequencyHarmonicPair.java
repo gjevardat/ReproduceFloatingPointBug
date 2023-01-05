@@ -35,15 +35,12 @@ import org.apache.commons.math3.util.Pair;
  * This class holds a fundamental frequency term and and its corresponding harmonic terms in 
  * a model.
  * 
- * @since 20.0.0
- * @author Leanne Guy &lt;leanne.guy@unige.ch&gt;
- * @version $Id$
  */
 public final class FrequencyHarmonicPair extends Pair<Double, int[]>  implements Serializable {
 
-    /** Serializable UID. */
-	private static final long serialVersionUID = 20L;
 	
+	private static final long serialVersionUID = 1L;
+
 	/**
      * Builds a frequency and harmonic terms pair.
      *
@@ -55,21 +52,11 @@ public final class FrequencyHarmonicPair extends Pair<Double, int[]>  implements
 		super(frequency, harmonics);
 	}
 
-    /**
-     * Gets the frequency value.
-     *
-     * @return a copy of the stored point.
-     */
     public double getFrequency() {
         final Double p = getKey();
         return p == null ? null : p.doubleValue();
     }
 
-    /**
-     * Gets the harmonic terms associated this frequency
-     *
-     * @return a copy of the stored value of the objective function.
-     */
     public int[] getHarmonics() {
         return super.getValue();
     }

@@ -70,15 +70,6 @@ import org.apache.commons.math3.util.MathUtils;
  * The time series function is represented by a polynomial function together
  * with a list of 0 or more HarmonicOscillators
  * 
- * @since 9.0.0
- * @author Leanne Guy &lt;leanne.guy@unige.ch&gt;
- * @version $Id: TimeSeriesFunction.java 556096 2017-03-31 08:20:31Z lguy $
- * 
- *          Requirements implemented by this class
- * @req CU7-WP711-03000-S-FUN-200
- * @req CU7-WP711-03000-S-FUN-220
- * @req CU7-WP711-03000-S-FUN-240
- * @req CU7-WP711-03000-S-FUN-260
  */
 public final class TimeSeriesFunction implements UnivariateDifferentiableFunction, Serializable {
 
@@ -333,28 +324,6 @@ public final class TimeSeriesFunction implements UnivariateDifferentiableFunctio
 			this(polynomialDegree, Stream.of(new FrequencyHarmonicPair(frequency, harmonics)).collect(Collectors.toList()));
 		}
 
-		
-
-//		/**
-//		 * Construct a parametric time series function with polynomial terms and
-//		 * many frequencies
-//		 * 
-//		 * @param polynomialDegree
-//		 *            the degree of the polynomial
-//		 * @param frequencies
-//		 *            the fundamental frequencies
-//		 * @param numHarmonics
-//		 *            the number of harmonics for each fundamental frequency
-//		 * @throws MathIllegalArgumentException
-//		 */
-//		public Parametric(int polynomialDegree, double[] frequencies, int[] numHarmonics)
-//				throws MathIllegalArgumentException {
-//			this(polynomialDegree, ModellingUtils.getFrequencyHarmonics(frequencies, numHarmonics));
-//		}
-
-	
-		
-	
 		
 		/**
 		 * Construct a TimeSeriesFunction defining the number of polynomial
