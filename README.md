@@ -1,5 +1,8 @@
 # ReproduceFloatingPointBug
 
+This code tries to fit a model a of curve to a set datapoints repreting the variation of luminosity of a star over time.
+The model of the curve contains a polynomial part and an harmonic part. This model is implemented in the class TimeSeriesFunction
+
 To reproduce the bug
 Run the unit test named TimeSeriesModelFitterBugTest
 
